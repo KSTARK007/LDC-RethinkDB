@@ -1,12 +1,12 @@
-# LUC-RethinkDB
+# LDC-RethinkDB
 
 ## Overview
 
-This is RethinkDB integrated with the Logically Unified Cache (LUC) architecture. RethinkDB is a production NoSQL database that stores schemaless JSON documents and is designed for real-time applications. 
+This is RethinkDB integrated with the Logically Disaggregated Cache (LDC) architecture. RethinkDB is a production NoSQL database that stores schemaless JSON documents and is designed for real-time applications. 
 
-This LUC integration demonstrates that the unified cache approach can be applied to real-world database systems with minimal changes to the existing codebase. The implementation focuses on **read-path optimizations** using LUC's remote cache access capabilities.
+This LDC integration demonstrates that the unified cache approach can be applied to real-world database systems with minimal changes to the existing codebase. The implementation focuses on **read-path optimizations** using LDC's remote cache access capabilities.
 
-## LUC Integration Details
+## LDC Integration Details
 
 - **Scope**: Read-path optimizations only (write-path not implemented due to time constraints)
 - **Changes**: Modifications contained within the cache layer (~2.4KLOC changes to 282KLOC codebase)
@@ -130,4 +130,4 @@ cd Main_run_scripts/
 
 ## Configuration
 
-The LUC-specific configurations are handled internally through the modified cache layer. Cache size and workload parameters are controlled through the experiment scripts.
+The LDC-specific configurations are handled internally through the modified cache layer. Cache size and workload parameters are controlled through the experiment scripts.
